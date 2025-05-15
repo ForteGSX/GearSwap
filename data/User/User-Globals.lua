@@ -56,24 +56,6 @@ send_command('bind @f12 gs c cycle IdleMode') --Changes your idle mode options s
 send_command('bind !f12 gs c reset DefenseMode') --Turns your defensive mode off.
 send_command('bind pause gs c update user') --Runs a quick check to make sure you have the right gear on and checks variables.
 send_command('bind ^@!backspace gs c buffup') --Buffup macro because buffs are love.
-send_command('bind %] input /macro set 10') --Job Specific Macro Page, buffs?
-send_command('bind ^] input /macro set 10') --Job Specific Macro Page, buffs?
-send_command('bind !] input /macro set 10') --Job Specific Macro Page, buffs?
-send_command('bind @] input /macro set 10') --Job Specific Macro Page, buffs?
-send_command('bind %End input /macro set 10') --Job Specific Macro Page, buffs?
-send_command('bind ^End input /macro set 10') --Job Specific Macro Page, buffs?
-send_command('bind !End input /macro set 10') --Job Specific Macro Page, buffs?
-send_command('bind @End input /macro set 10') --Job Specific Macro Page, buffs?
-send_command('bind %[ gs c macropage') --Job Specific Macro Page, buffs?
-send_command('bind ^[ gs c macropage') --Job Specific Macro Page, buffs?
-send_command('bind ![ gs c macropage') --Job Specific Macro Page, buffs?
-send_command('bind @[ gs c macropage') --Job Specific Macro Page, buffs?
-send_command('bind %Home gs c macropage') --Job Specific Macro Page, buffs?
-send_command('bind ^Home gs c macropage') --Job Specific Macro Page, buffs?
-send_command('bind !Home gs c macropage') --Job Specific Macro Page, buffs?
-send_command('bind @Home gs c macropage') --Job Specific Macro Page, buffs?
-send_command('bind ^space gs c smartstun') --Stun!
-windower.chat.input:schedule(5,'/cm linkshell2')
 
 -- The following can be uncommented to add text counts after using items.
 -- item_bags = {'Satchel','Inventory','Sack','Case'}
