@@ -28,8 +28,6 @@ NotifyBuffs = S{'doom','petrification'}
 	~ = Shift Key
 	# = Apps Key
 ]]
-send_command('bind ^r gs c weapons Default') --Swaps to default weapons.
-send_command('bind ^! gs c weapons None') --Sets to no weapons mode.
 send_command('bind !@^f7 gs c toggle AutoWSMode') --Turns auto-ws mode on and off.
 send_command('bind !^f7 gs c toggle AutoFoodMode') --Turns auto-food mode on and off.
 send_command('bind f7 gs c cycle Weapons') --Cycle through weapons sets.
