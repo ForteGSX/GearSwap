@@ -1950,8 +1950,9 @@ function check_cpring()
 				return true
 			end
 		end
+	end
 
-	elseif player.main_job_level == 99 then
+	if player.main_job_level == 99 then
 		if player.job_points[(res.jobs[player.main_job_id].ens):lower()].jp_spent == 2100 and not buffactive["Emporox's Gift"] then
 			if item_available("Emporox's Ring") then
 				local emporox_ring = get_usable_item("Emporox's Ring")
@@ -2544,7 +2545,7 @@ function update_combat_form()
 		state.CombatForm:set('DW')
 	elseif sets.engaged[player.equipment.main] then
 		state.CombatForm:set(player.equipment.main)
-	elseif sets.engaged.Fencer and wielding == 'Fencing' then
+	elseif sets.engaged.Fencer and wielding() == 'Fencing' then
 		state.CombatForm:set('Fencer')
 	else
 		state.CombatForm:reset()
